@@ -1,5 +1,17 @@
 # EcologyWebsite
 
+## Change of plan
+
+The website will be built from zero using HTML, CSS and Javascript (some PHP is needed)
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+
+---
+
+&nbsp;
+
 This is my January 2022 project of building a website using WordPress. The website will be named **Environment as our First Priority**. It is supposed to follow the basic rules for the profesionnal development of a website:
 
 &nbsp;
@@ -55,13 +67,18 @@ This is my January 2022 project of building a website using WordPress. The websi
 
 &nbsp;
 
+* *About*
+  * Who I am and why this website
+
+&nbsp;
+
 * *Contact*
   * contact form
 
 &nbsp;
 &nbsp;
 
-2. **Wireframes**
+1. **Wireframes**
 
 > Quickly draw the outlines of every pages
 > 
@@ -71,25 +88,25 @@ This is my January 2022 project of building a website using WordPress. The websi
 
 * **Computer Version:**
 
-![Wireframe Header For Computer](./WireframesExtract/HeaderComputer.png "Header Computer version")
+![Wireframe Header For Computer](./ReadmeImages/HeaderComputer.png "Header Computer version")
 
-![Wireframe Footer For Computer](./WireframesExtract/FooterComputer.png "Footer Computer version")
+![Wireframe Footer For Computer](./ReadmeImages/FooterComputer.png "Footer Computer version")
 
-![Wireframe Blog For Computer in Homepage](./WireframesExtract/HomepageBlogComputer.png "Blog on Hompage Computer version")
+![Wireframe Blog For Computer in Homepage](./ReadmeImages/HomepageBlogComputer.png "Blog on Hompage Computer version")
 
-![Wireframe Blog For Computer](./WireframesExtract/BlogComputer.png "Blog Computer version")
+![Wireframe Blog For Computer](./ReadmeImages/BlogComputer.png "Blog Computer version")
 
 &nbsp;
 
 * **Phone Version:**
 
-![Wireframe Header For Phone](./WireframesExtract/HeaderPhone.png "Header Phone version")
+![Wireframe Header For Phone](./ReadmeImages/HeaderPhone.png "Header Phone version")
 
-![Wireframe Footer For Phone](./WireframesExtract/FooterPhone.png "Footer Phone version")
+![Wireframe Footer For Phone](./ReadmeImages/FooterPhone.png "Footer Phone version")
 
-![Wireframe Improvements For Phone](./WireframesExtract/HomepageImprovementsPhone.png "Improvements on Homepage Phone version")
+![Wireframe Improvements For Phone](./ReadmeImages/HomepageImprovementsPhone.png "Improvements on Homepage Phone version")
 
-![Wireframe Act Now For Phone](./WireframesExtract/HomepageActNowPhone.png "Act Now on Homepage Phone version")
+![Wireframe Act Now For Phone](./ReadmeImages/HomepageActNowPhone.png "Act Now on Homepage Phone version")
 
 &nbsp;
 
@@ -105,4 +122,32 @@ This is my January 2022 project of building a website using WordPress. The websi
 
 3. **Project Organization**
 
->
+> Theme used: **OceanWP**
+> 
+> Page-builder used: **Elementor**
+> 
+> Plugin used:
+> 
+> * Central Color Palette
+> * Polylang
+> * Responsive Menu
+> * Redirection
+> * Duplicate Page
+> * Short Pixel
+> * WP Forms
+> * Hustle
+> * Insert Headers and Footers
+> * SEO Press
+> * Updraft Plus
+> * Wordfence
+> * WPS Hide Login
+> * Livemesh Addons for Elementor
+> 
+> Graphic Charter:
+> 
+> * Logo: see below
+> * Color Palette: see below
+> * Fonts: Open Sans and Itim (some Caveat)
+
+![Logo](./assets/icons/shark_logo_ecology.png "Logo")
+![Color Palette](./ReadmeImages/ColorPalette.png "Color Palette")
