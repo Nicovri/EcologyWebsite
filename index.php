@@ -10,15 +10,12 @@
     <!-- Web page CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Menu Header CSS -->
-    <link rel="stylesheet" href="assets/css/menu_header.css" />
-
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Itim|Caveat">
 
     <!-- Favicons -->
     <link
-      rel="shark_ecology_favicon"
+      rel="icon"
       type="image/png"
       sizes="730x730"
       href="assets/icons/shark_logo_ecology.png"
@@ -28,38 +25,7 @@
   </head>
   <body>
 
-    <!-- Navbar -->
-    <header class="header">
-      <nav role="navigation" class="primary-navigation navbar navbar-expand-lg fixed-top py-3">
-        <div class="container">
-          <a href="index.php" class="navbar-brand text-uppercase font-weight-bold"><img alt="Logo" src="assets/icons/shark_logo_ecology_transparency.png" width="100px" height="100px"></a>
-          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a href="index.php" class="nav-link text-uppercase font-weight-bold">Homepage <span class="sr-only">(current)</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Improvements &dtrif;</a>
-                <ul class="dropdown">
-                  <li class="nav-item"><a href="footprint.php" class="nav-link text-uppercase font-weight-bold">Footprint</a></li>
-                  <li class="nav-item"><a href="solutions.php" class="nav-link text-uppercase font-weight-bold">Solutions</a></li>
-                  <li class="nav-item"><a href="inspirations.php" class="nav-link text-uppercase font-weight-bold">Inspirations</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Act Now &dtrif;</a>
-                <ul>
-                  <li class="nav-item"><a href="spread_the_word.php" class="nav-link text-uppercase font-weight-bold">Spread the word</a></li>
-                  <li class="nav-item"><a href="participate.php" class="nav-link text-uppercase font-weight-bold">Participate</a></li>
-                  <li class="nav-item"><a href="gather_people.php" class="nav-link text-uppercase font-weight-bold">Gather people</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a href="blog.php" class="nav-link text-uppercase font-weight-bold">Blog</a></li>
-              <li class="nav-item"><a href="about.php" class="nav-link text-uppercase font-weight-bold">About</a></li>
-              <li class="nav-item"><a href="contact.php" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <?php include "./menu_header.html"?>
 
 
 <!-- For demo purpose -->
@@ -116,6 +82,8 @@
     <!-- Social icons -->
 
     <!-- Scroll to top button -->
+
+    <?php include "menu_footer.html"?>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
