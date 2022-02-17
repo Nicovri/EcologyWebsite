@@ -2,7 +2,7 @@
 
 ## Change of plan
 
-The website will be built from zero using HTML, CSS and Javascript (some PHP is needed)
+The website will be built from zero using HTML, CSS and Javascript
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
