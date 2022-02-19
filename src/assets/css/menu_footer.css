@@ -1,13 +1,18 @@
+.footer {
+  background-color: #e1d3a5;
+  min-width: 100%;
+}
+
 .navbar .nav-link {
-    color: #437D46;
-    transition: all 0.4s ease;
+  color: #437d46;
+  transition: all 0.4s ease;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #F2F4F4;
-    text-decoration: none;
-    transition: all 0.4s ease;
+  color: #f2f4f4;
+  text-decoration: none;
+  transition: all 0.4s ease;
 }
 
 /*.footer {

@@ -149,5 +149,5 @@ This is my January 2022 project of building a website using WordPress. The websi
 > * Color Palette: see below
 > * Fonts: Open Sans and Itim (some Caveat)
 
-![Logo](./assets/icons/shark_logo_ecology.png "Logo")
+![Logo](./src/assets/icons/shark_logo_ecology.png "Logo")
 ![Color Palette](./ReadmeImages/ColorPalette.png "Color Palette")

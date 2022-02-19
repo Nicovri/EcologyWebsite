@@ -1,3 +1,7 @@
+.header {
+  background-color: #e1d3a5;
+}
+
 .navbar {
   transition: all 0.4s;
 }
@@ -22,8 +26,9 @@
 }
 
 .navbar .active {
-  background: #7aa38a;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #e1d3a5;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 100px 50px;
 }
 
 /* nav.primary-navigation ul li ul {
