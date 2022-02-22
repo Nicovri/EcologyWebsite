@@ -23,7 +23,7 @@
       rel="icon"
       type="image/png"
       sizes="730x730"
-      href="assets/icons/shark_logo_ecology.png"
+      href="../assets/icons/shark_logo_ecology.png"
     />
 
     <title>Ecology First Priority</title>
@@ -34,22 +34,66 @@
 
     <main>
 
-      <section id="home-main-section">
-        <video autoplay muted loopp id="background-woods-fog" src="../assets/images_videos/woods_fog.mp4"></video>
+      <section id="home-section-1">
+        <video autoplay loop muted id="background-woods-fog" poster="../assets/images_videos/poster_woods_fog.png">
+          <source src="../assets/images_videos/woods_fog.mp4" type="video/mp4">
+        </video>
 
-        <h1 id="main-title">Environment as Our First Priority</h1>
+        <h1 class="home-title">Environment as Our First Priority</h1>
 
-        <h5 id="home-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam iure excepturi omnis esse quidem? Officiis ratione, incidunt sunt dolore alias fuga impedit reiciendis consequuntur in reprehenderit eveniet corporis a porro. Ipsam, pariatur! Doloremque expedita reiciendis, quisquam facilis dolor magnam facere vero fugit deserunt esse assumenda. Reiciendis ea maxime recusandae voluptatibus!</h5>
+        <h5 class="home-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam iure excepturi omnis esse quidem? Officiis ratione, incidunt sunt dolore alias fuga impedit reiciendis consequuntur in reprehenderit eveniet corporis a porro. Ipsam, pariatur! Doloremque expedita reiciendis, quisquam facilis dolor magnam facere vero fugit deserunt esse assumenda. Reiciendis ea maxime recusandae voluptatibus!</h5>
 
-        <img class="home-main-img" src="../assets/images_videos/environmental-protection.jpg" alt="environmental-protection">
+        <img class="home-img" src="../assets/images_videos/environmental-protection.jpg" alt="environmental-protection">
 
-        <p class="home-main-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat hic doloribus, magni error, rerum dolorum reprehenderit itaque ex sapiente asperiores accusamus mollitia. Ad maxime dolorum, commodi, quam veritatis itaque voluptatibus similique dolores unde soluta excepturi a cumque sapiente iure modi esse, consequuntur temporibus explicabo blanditiis illum impedit nisi animi amet! Alias magni delectus voluptate rem voluptatum inventore voluptates libero reiciendis. Ducimus voluptatum voluptates vero deleniti et exercitationem eos esse fugit placeat sunt blanditiis, consequuntur quos quae! Ducimus animi earum perferendis architecto corrupti facilis assumenda aspernatur incidunt maiores at, eius, officiis laudantium accusantium et, necessitatibus dolor? Tempore veniam at quod?</p>
+        <p class="home-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat hic doloribus, magni error, rerum dolorum reprehenderit itaque ex sapiente asperiores accusamus mollitia. Ad maxime dolorum, commodi, quam veritatis itaque voluptatibus similique dolores unde soluta excepturi a cumque sapiente iure modi esse, consequuntur temporibus explicabo blanditiis illum impedit nisi animi amet! Alias magni delectus voluptate rem voluptatum inventore voluptates libero reiciendis. Ducimus voluptatum voluptates vero deleniti et exercitationem eos esse fugit placeat sunt blanditiis, consequuntur quos quae! Ducimus animi earum perferendis architecto corrupti facilis assumenda aspernatur incidunt maiores at, eius, officiis laudantium accusantium et, necessitatibus dolor? Tempore veniam at quod?</p>
       </section>
+
+      <div id="without-video">
+        <section id="home-section-2">
+          <h1 class="home-title">Improvements</h1>
+
+          <div class="grid-container-improve">
+            <div class="grid-item-improve-1">
+              <p class="home-grid-p">Footprint</p>
+              <ul>
+                <li>Lorem.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+            </div>
+            <div class="grid-item-improve-2">
+              <p class="home-grid-p">Solutions</p>
+              <ul>
+                <li>Lorem.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+            </div>
+            <div class="grid-item-improve-3">
+              <p class="home-grid-p">Inspirations</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div class="flex-container-improve">
+            <a class="flex-item-improve-1 flex-a" href="./footprint.html">Footprint</a>
+            <a class="flex-item-improve-3 flex-a" href="./inspirations.html">Inspirations</a>
+            <a class="flex-item-improve-2 flex-a" href="./solutions.html">Solutions</a>
+          </div>
+        </section>
+
+        <section id="home-section-3">
+          <h1 class="home-title">Act Now!</h1>
+        </section>
+      </div>
     </main>
 
     <div id="menu-footer"></div>
 
+    <script src="../assets/js/index.js"></script>
     <script src="../components/menu-header.js"></script>
-    <script src="../components//menu-footer.js"></script>
+    <script src="../components/menu-footer.js"></script>
   </body>
 </html>
