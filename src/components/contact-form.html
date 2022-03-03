@@ -1,0 +1,74 @@
+<!-- Contact-Form CSS -->
+<link rel="stylesheet" href="../assets/css/contact-form.css" />
+
+<link
+  rel="stylesheet"
+  href="../../node_modules/intl-tel-input/build/css/intlTelInput.min.css"
+/>
+
+<!-- Contact Form -->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <form id="form-send-email" onsubmit="sendEmail(this)">
+        <div class="row">
+          <div class="col-md">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                name="firstName"
+                placeholder="your first name"
+              />
+              <label for="firstName">First Name</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                name="lastName"
+                placeholder="your last name"
+              />
+              <label for="lastName">Last Name</label>
+            </div>
+          </div>
+        </div>
+
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" />
+
+        <label for="tel" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" name="tel" />
+
+        <label for="why" class="form-label">Reason</label>
+        <select name="why" class="form-select" id="reasonSelect">
+          <option value="">Simple message</option>
+          <option>Ask for advice</option>
+          <option>Correct an error</option>
+          <option>Give compliments</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          class="form-control"
+          rows="8"
+        ></textarea>
+
+        <button class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+    <div class="col">
+      <img
+        src="../assets/icons/shark_logo_ecology.png"
+        alt=""
+        width="500px"
+        height="500px"
+      />
+    </div>
+  </div>
+</div>
