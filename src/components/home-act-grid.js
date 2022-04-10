@@ -111,8 +111,8 @@ gridData.map((item) => {
 
     const link = document.createElement("a");
     link.setAttribute("href", item.link);
-    link.setAttribute("class", "itemLink");
-    link.setAttribute("style", "text-align: center;");
+    link.setAttribute("class", "btn-round");
+    link.setAttribute("style", "align-self: center;");
     const text = document.createTextNode(item.btn);
     link.appendChild(text);
 

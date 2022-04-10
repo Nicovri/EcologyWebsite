@@ -43,6 +43,23 @@ section {
   padding: 50px 100px;
 }
 
+.btn-round {
+  text-decoration: none;
+  background: #e1d3a5;
+  border-radius: 100px;
+  white-space: nowrap;
+  padding: 10px 25px;
+  color: #437d46;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.btn-round:hover,
+.btn-round:focus {
+  color: #f2f4f4;
+  font-weight: bold;
+}
+
 .home-p {
   margin: 30px 10%;
   text-align: justify;
@@ -78,6 +95,7 @@ section {
 .grid-item-improve-3 {
   padding: 25px;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
+  background: #b7995f;
   border-radius: 100px 50px;
 }
 
@@ -106,16 +124,6 @@ section {
   flex-wrap: wrap;
 }
 
-.flex-a {
-  text-decoration: none;
-  background: #e1d3a5;
-  border-radius: 100px;
-  white-space: nowrap;
-  padding: 10px 25px;
-  color: #437d46;
-  transition: all 0.4s ease;
-}
-
 .itemTitle,
 .itemText {
   text-align: center;
@@ -125,21 +133,8 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
-.itemLink {
-  text-decoration: none;
-  background: #e1d3a5;
-  border-radius: 100px;
-  white-space: nowrap;
-  padding: 10px 25px;
-  color: #437d46;
-  transition: all 0.4s ease;
-}
-.itemLink:hover,
-.itemLink:focus {
-  color: #f2f4f4;
-}
 
-.flex-a:hover,
-.flex-a:focus {
-  color: #f2f4f4;
+#home-link-blog {
+  display: flex;
+  justify-content: center;
 }
