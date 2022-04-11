@@ -1,3 +1,60 @@
 #message {
   resize: none;
 }
+
+.form-control,
+.form-control:focus,
+.form-select,
+.form-select:focus {
+  background: #29622d;
+  transition: all 0.2s ease;
+}
+
+.form-option,
+.form-option:focus {
+  background: #619765;
+}
+
+.form-control:focus,
+.form-select:focus,
+.btn-submit:focus,
+.btn-submit:checked {
+  border-color: #619765;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 18px #619765;
+  outline: 0 none;
+  background: #619765;
+}
+
+.form-label {
+  color: #f2f4f4;
+}
+
+.form-select {
+  color: #f2f4f4;
+}
+
+.btn-submit {
+  background: #29622d;
+  border: none;
+  border-radius: 100px;
+}
+
+.btn-submit:hover {
+  background: #619765;
+}
+
+.form-floating {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  #col-img {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #col-img {
+    display: none;
+  }
+}

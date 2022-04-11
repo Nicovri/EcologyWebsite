@@ -21,7 +21,7 @@
                 name="firstName"
                 placeholder="your first name"
               />
-              <label for="firstName">First Name</label>
+              <label for="firstName" class="form-label">First Name</label>
             </div>
           </div>
           <div class="col-md">
@@ -32,43 +32,63 @@
                 name="lastName"
                 placeholder="your last name"
               />
-              <label for="lastName">Last Name</label>
+              <label for="lastName" class="form-label">Last Name</label>
             </div>
           </div>
         </div>
 
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" name="email" />
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="your email"
+          />
+          <label for="email" class="form-label">Email</label>
+        </div>
 
-        <label for="tel" class="form-label">Phone Number</label>
-        <input type="tel" class="form-control" name="tel" />
+        <div class="form-floating">
+          <input
+            type="tel"
+            class="form-control"
+            name="tel"
+            placeholder="your phone number"
+          />
+          <label for="tel" class="form-label">Phone Number</label>
+        </div>
 
-        <label for="why" class="form-label">Reason</label>
-        <select name="why" class="form-select" id="reasonSelect">
-          <option value="">Simple message</option>
-          <option>Ask for advice</option>
-          <option>Correct an error</option>
-          <option>Give compliments</option>
-        </select>
+        <div class="form-floating">
+          <select name="why" class="form-select" id="reasonSelect">
+            <option class="form-option" value="simple">Simple message</option>
+            <option class="form-option" value="advice">Ask for advice</option>
+            <option class="form-option" value="error">Correct an error</option>
+            <option class="form-option" value="nice">Give compliments</option>
+          </select>
+          <label for="why" class="form-label">Reason</label>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          class="form-control"
-          rows="8"
-        ></textarea>
+        <div class="form-floating">
+          <textarea
+            name="message"
+            id="message"
+            class="form-control"
+            rows="8"
+            placeholder="leave a comment"
+          ></textarea>
+          <label for="message" class="form-label">Message</label>
+        </div>
 
-        <button class="btn btn-primary mt-3">Submit</button>
+        <div class="d-flex flex-wrap justify-content-center">
+          <button class="btn btn-primary mt-3 btn-submit">Submit</button>
+        </div>
       </form>
     </div>
-    <div class="col">
+    <div id="col-img" class="col-3 align-items-center">
       <!-- If screen not large enough, put the image not visible -->
       <img
-        src="../assets/icons/shark_logo_ecology.png"
-        alt=""
-        width="500px"
-        height="500px"
+        class="img-fluid mx-auto d-block"
+        src="../assets/icons/shark_logo_ecology_transparency.png"
+        alt="shark logo"
       />
     </div>
   </div>

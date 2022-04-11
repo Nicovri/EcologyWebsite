@@ -71,7 +71,7 @@ parent.setAttribute(
 
 gridData.map((item) => {
   const div = document.createElement("div");
-  div.setAttribute("class", "grid-item-act-" + item.id);
+  div.classList.add("grid-item-act-" + item.id);
   div.setAttribute(
     "style",
     `border: 1px solid #000; display: flex; flex-direction: column;`
@@ -79,12 +79,12 @@ gridData.map((item) => {
 
   if (item.id === 1 || item.id === 5 || item.id === 9) {
     const p1 = document.createElement("p");
-    p1.setAttribute("class", "itemTitle");
+    p1.classList.add("itemTitle");
     const title = document.createTextNode(item.p);
     p1.appendChild(title);
 
     const p2 = document.createElement("p");
-    p2.setAttribute("class", "itemText");
+    p2.classList.add("itemText");
     const text = document.createTextNode(item.text);
     p2.appendChild(text);
 
@@ -104,14 +104,15 @@ gridData.map((item) => {
     let url = URL.createObjectURL(blob);
     icon.setAttribute("src", url);
     icon.setAttribute("alt", "item-icon");
-    icon.setAttribute("class", "itemIcon");
+    icon.classList.add("itemIcon");
     icon.width = "100";
+    // icon.classList.add("img-fluid");
 
     const newLine = document.createElement("br");
 
     const link = document.createElement("a");
     link.setAttribute("href", item.link);
-    link.setAttribute("class", "btn-round");
+    link.classList.add("btn-round");
     link.setAttribute("style", "align-self: center;");
     const text = document.createTextNode(item.btn);
     link.appendChild(text);
