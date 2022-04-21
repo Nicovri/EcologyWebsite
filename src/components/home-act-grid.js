@@ -6,7 +6,7 @@ const gridData = [
   },
   {
     id: 2,
-    img: "",
+    img: "../assets/images_videos/spread_the_word_img.jpg",
   },
   {
     id: 3,
@@ -33,11 +33,11 @@ const gridData = [
   },
   {
     id: 6,
-    img: "",
+    img: "../assets/images_videos/participate_img.jpg",
   },
   {
     id: 7,
-    img: "",
+    img: "../assets/images_videos/gather_people_img.jpg",
   },
   {
     id: 8,
@@ -74,26 +74,41 @@ gridData.map((item) => {
   div.classList.add("grid-item-act-" + item.id);
   div.setAttribute(
     "style",
-    `border: 1px solid #000; display: flex; flex-direction: column;`
+    `
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    `
   );
 
   if (item.id === 1 || item.id === 5 || item.id === 9) {
     const p1 = document.createElement("p");
     p1.classList.add("itemTitle");
+    p1.classList.add("home-act-p");
     const title = document.createTextNode(item.p);
     p1.appendChild(title);
 
     const p2 = document.createElement("p");
     p2.classList.add("itemText");
+    p2.classList.add("home-act-sub-p");
     const text = document.createTextNode(item.text);
     p2.appendChild(text);
+
+    div.setAttribute(
+      "style",
+      "box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4); border-radius: 100px 50px; padding: 25px 15px; background: #619765;"
+    );
+    div.classList.add("grid-item-act-text");
 
     div.appendChild(p1);
     div.appendChild(p2);
   }
   if (item.id === 2 || item.id === 6 || item.id === 7) {
     const img = document.createElement("img");
-    img.setAttribute("src", item.img);
+    img.src = item.img;
+    img.classList.add("img-fluid");
+    img.classList.add("home-act-img");
     img.setAttribute("alt", "item-img");
 
     div.appendChild(img);
@@ -105,8 +120,8 @@ gridData.map((item) => {
     icon.setAttribute("src", url);
     icon.setAttribute("alt", "item-icon");
     icon.classList.add("itemIcon");
+    icon.classList.add("img-fluid");
     icon.width = "100";
-    // icon.classList.add("img-fluid");
 
     const newLine = document.createElement("br");
 

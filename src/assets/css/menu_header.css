@@ -2,6 +2,22 @@
   background-color: #e1d3a5;
 }
 
+.gradient {
+  background: #e1d3a5;
+  background: -moz-linear-gradient(
+    center bottom,
+    rgba(255, 211, 165, 0.4) 5%,
+    rgba(255, 211, 165, 0.9) 95%
+  );
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.05, rgba(255, 211, 165, 0.4)),
+    color-stop(0.95, rgba(255, 211, 165, 0.9))
+  );
+}
+
 .navbar {
   transition: all 0.4s;
 }
