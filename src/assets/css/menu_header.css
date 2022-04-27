@@ -22,6 +22,13 @@
   transition: all 0.4s;
 }
 
+.navbar .nav-item {
+  padding: 0 30px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
 .navbar-nav .nav-link {
   color: #437d46;
   transition: all 0.4s ease;
@@ -33,15 +40,30 @@
   text-decoration: none;
 }
 
-.navbar .nav-item {
-  padding: 0 30px;
-  display: inline-block;
-  position: relative;
-  text-align: center;
+.dropdown-menu {
+  background: #e1d3a5;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
 }
 
 .navbar .active {
-  background: #e1d3a5;
+  color: #f2f4f4;
+  background: #b7995f;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 100px 50px;
+}
+
+.navbar .active:hover,
+.navbar .active:focus {
+  color: #437d46;
+  background: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+.nav-link:not(.nav-drop-item):hover,
+.nav-link:not(.nav-drop-item):focus {
+  background: #b7995f;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
   border-radius: 100px 50px;
 }
