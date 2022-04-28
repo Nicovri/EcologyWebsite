@@ -3,16 +3,17 @@
   min-width: 100%;
 }
 
-/* .navbar .nav-link {
+/* How to override bootstrap color in footer? */
+.footer .footer-link {
   color: #437d46;
+  text-decoration: none;
   transition: all 0.4s ease;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
+.footer .footer-link:hover,
+.footer .footer-link:focus {
   color: #f2f4f4;
-  text-decoration: none;
-} */
+}
 
 /*.footer {
     background-color: #7AA38A;

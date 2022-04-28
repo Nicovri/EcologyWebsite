@@ -17,9 +17,10 @@ h6 {
 
 #without-video {
   background: linear-gradient(#91743d, #e1d3a5);
+  overflow-x: hidden;
 }
 
-.green-background {
+#home-section-3 {
   /* background: linear-gradient(#1f1e1e, 5%, #3c643f, 90%, #8eb891); */
   background: linear-gradient(#1f1e1e, 5%, #3c643f, 95%, #1f1e1e);
 }
@@ -149,6 +150,28 @@ section {
   max-width: 250px;
 }
 
+/* Do a new rule for 800px (look at home-act-grid) */
+@media only screen and (max-width: 800px) {
+  .home-grid-ul,
+  .home-grid-p,
+  .home-act-p,
+  .home-act-sub-p {
+    font-size: small;
+  }
+
+  .home-act-img {
+    max-width: 100%;
+  }
+
+  .footer-col {
+    font-size: small;
+  }
+
+  .footer-ul {
+    font-size: smaller;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .home-subtitle,
   .home-p {
@@ -171,6 +194,10 @@ section {
     font-size: small;
   }
 
+  .footer-col {
+    font-size: smaller;
+  }
+
   .footer-ul {
     font-size: x-small;
   }
@@ -185,7 +212,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .home-subtitle,
   .home-p {
     font-size: x-small;
@@ -207,6 +234,7 @@ section {
     font-size: x-small;
   }
 
+  .footer-col,
   .footer-ul {
     font-size: xx-small;
   }
@@ -217,20 +245,36 @@ section {
   }
 }
 
-.grid-item-improve-1 {
-  animation-name: move-improve-1;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  /* animation-fill-mode: forwards; */
+.hover {
   transition: all 0.8s ease;
 }
 
-.grid-item-improve-1:hover {
+.hover:hover {
   transform: scale(1.05);
 }
 
-@keyframes move-improve-1 {
+.slide-to-right {
+  animation-name: slide-to-right;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.slide-to-left {
+  animation-name: slide-to-left;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.slide-up {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-to-right {
   from {
     opacity: 0;
     transform: translateX(-200px);
@@ -239,4 +283,33 @@ section {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+@keyframes slide-to-left {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.home-act-img {
+  transition: all 0.2s ease;
+}
+.home-act-img:hover {
+  transform: rotate(7deg);
 }
