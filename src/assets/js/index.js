@@ -1,9 +1,3 @@
-window.onload = function () {
-  setTimeout(function () {
-    document.body.style.opacity = "100";
-  }, 500);
-};
-
 var improve1 = document.getElementsByClassName("grid-item-improve-1");
 var improve2 = document.getElementsByClassName("grid-item-improve-2");
 var improve3 = document.getElementsByClassName("grid-item-improve-3");

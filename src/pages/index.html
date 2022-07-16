@@ -12,9 +12,12 @@
     />
     <script src="../../node_modules//bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <!-- React -->
+    <!-- React
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script> -->
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css" />
 
     <!-- Web page CSS -->
     <link rel="stylesheet" href="../assets/css/index.css" />
@@ -36,12 +39,6 @@
     <title>Ecology First Priority</title>
   </head>
   <body>
-    <!-- To wait until the page is fully loaded -->
-    <style>
-      body {
-        opacity: 0;
-      }
-    </style>
     <div id="menu-header"></div>
 
     <main>
@@ -59,7 +56,7 @@
           />
         </video>
 
-        <h1 class="home-title">Environment as Our First Priority</h1>
+        <h1 class="section-title">Environment as Our First Priority</h1>
 
         <h5 class="home-subtitle">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam iure
@@ -94,7 +91,7 @@
 
       <div id="without-video">
         <section id="home-section-2">
-          <h1 class="home-title">Improvements</h1>
+          <h1 class="section-title">Improvements</h1>
 
           <div class="grid-container-improve">
             <div class="grid-item-improve-1">
@@ -135,13 +132,13 @@
         </section>
 
         <section id="home-section-3">
-          <h1 class="home-title">Act Now!</h1>
+          <h1 class="section-title">Act Now!</h1>
 
           <div id="grid-container-act"></div>
         </section>
 
         <section id="home-section-4">
-          <h1 class="home-title">Blog</h1>
+          <h1 class="section-title">Blog</h1>
 
           <div id="home-blog" class="mt-5 mb-5"></div>
 
@@ -151,7 +148,7 @@
         </section>
 
         <section id="home-section-5">
-          <h1 class="home-title">Contact</h1>
+          <h1 class="section-title">Contact</h1>
 
           <div id="contact-form"></div>
         </section>
@@ -160,13 +157,15 @@
 
     <div id="menu-footer"></div>
 
+    <script src="../assets/js/global.js"></script>
+
     <script src="../assets/js/index.js"></script>
+
     <script src="../components/menu-header.js"></script>
     <script src="../components/menu-footer.js"></script>
     <script src="../components/contact-form.js"></script>
 
     <script src="../components/home-act-grid.js"></script>
-
     <script src="../components/home-blog.js"></script>
   </body>
 </html>
